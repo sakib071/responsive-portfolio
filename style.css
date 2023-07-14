@@ -154,6 +154,7 @@ main section {
 }
 
 .skill-desc {
+    font-size: 1em;
     text-align: justify;
     color: #757575;
 }
@@ -211,7 +212,7 @@ footer {
     width: 50%;
 }
 
-.social-links a{
+.social-links a {
     margin-right: 25px;
 }
 
@@ -230,4 +231,46 @@ textarea {
     border: 0;
     background: white;
     width: 100%;
+}
+
+/* responsie styles */
+
+/* mobile device */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    .skill-container,
+    .resume-container,
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    .contact [type="email"],
+    textarea {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+
+    .skill-container,
+    .resume-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+
 }
