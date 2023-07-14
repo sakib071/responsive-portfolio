@@ -242,14 +242,38 @@ textarea {
 
 @media screen and (max-width: 576px) {
 
-    .skill-container,
-    .resume-container,
-    .footer {
-        flex-direction: column;
-        padding: 20px;
+    .header {
+        background-image: none;
     }
 
-    .footer {
+    nav,
+    nav>ul,
+    .banner,
+    .skill-container,
+    .resume-container,
+    .footer,
+    .about-info-container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav>ul {
+        gap: 10px;
+    }
+
+    .banner img {
+        width: 80%;
+    }
+
+    .banner {
+        padding: 10px 10px 0 10px;
+    }
+
+    .footer,
+    .about {
         padding: 10px;
     }
 
@@ -261,6 +285,11 @@ textarea {
     .contact [type="email"],
     textarea {
         width: 80%;
+    }
+
+    .btn-primary {
+        font-size: 12px;
+        padding: 10px 20px;
     }
 }
 
